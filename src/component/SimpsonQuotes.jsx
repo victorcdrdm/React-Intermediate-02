@@ -1,16 +1,14 @@
 import React from 'react'
 
-function SimpsonQuote({quote}) {
+function SimpsonQuote({quote, image, character}) {
     return (
-        quote && (
-            <div className='DisplayEmployee'>
-                <img src={quote.image}/>
-                <ul>
-                    <li>{quote.character}</li>
-                    <li>{quote.quote}</li>
-                </ul>
-            </div>
-        )
+        <div className='DisplayEmployee'>
+            <img src={image}/>
+            <ul>
+                <li>{character}</li>
+                <li>{quote}</li>
+            </ul>
+        </div>
     );
 }
 
